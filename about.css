@@ -1,0 +1,42 @@
+@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700|Karla:400,700|Lora:700italic);
+.pt_text::-webkit-scrollbar {width: 3px;  background:#fff;}
+.pt_text::-webkit-scrollbar-thumb {	background:#e5d727; border:1px solid #fff; width:1px;}
+.pt_text::-webkit-scrollbar-track {	background:#fff; }
+#pt_container {border:1px solid #ccc; padding:30px; width:450px; margin:0 auto; background-color:#fff;}
+#pt_image {width:200px; height:320px;float:left; background-size:cover;}
+.pattern {width:200px; height:320px; background-image:url('http://i.imgur.com/HejYAsw.png'); opacity:0.15;}
+.pt_text {width:212px; height:320px;  font:10px 'karla'; font-weight:400; line-height:12px; display:block; overflow:auto; float:left; text-align:justify; padding-right:5px; margin-left:10px;}
+.byrachel {text-align:right; width:510px; margin:0 auto; display:block; opacity:0.7;}
+.pt_text h1 {font:12px 'montserrat'; text-transform:uppercase; letter-spacing:3px; font-weight:700; margin-bottom:2px; margin-top:15px; color:#e5d727}
+.pt_text h2 {font:12px 'montserrat'; text-transform:uppercase; letter-spacing:3px; font-weight:700; margin-bottom:2px; margin-top:15px;  color:#98dac6}
+.pt_text h3 {font:12px 'montserrat'; text-transform:uppercase; letter-spacing:3px; font-weight:700; margin-bottom:2px; margin-top:15px;  color:#f18b9c}
+
+.pt_desc {font:7px 'montserrat'; font-weight:700; letter-spacing:1px; display:block; border-top:3px solid #fff; text-align:right; padding-top:4px;}
+
+label img {width:50px; height:50px;}
+
+.pt_text i {font:12px 'lora'; line-height:12px; font-style:italic; font-weight:700; color:#f18b9c;}
+.pt_text b {text-transform:uppercase; font-size:9px; font-weight:700; color:#5bc7ab}
+
+.r_tabs {  position: relative;   min-height: 535px;   clear: both; overflow:hidden;  margin:0;  border:1px solid #f0f0f0; padding:10px;}
+.r_tab {  float: left; }
+.r_tab label {display:block; width:50px; cursor:pointer; height:50px;  padding:5px; border:1px solid #ddd; 
+ position: relative; margin-right:11px; top: 474px; z-index:9; opacity:0.7; -webkit-transition: all 0.4s;
+   -moz-transition: all 0.4s;    -o-transition: all 0.4s;    transition: all 0.4s;}
+.r_tab [type=radio] {  display: none;   }
+.pt_top {padding:0px;  position: absolute; height:320px; overflow:hidden;  top: 10px; width:438px;  left: -400;  background: white;  right: 10; 
+ bottom: 0; opacity:0; -webkit-transition: all 0.4s;    -moz-transition: all 0.4s;    -o-transition: all 0.4s;    transition: all 0.4s;}
+
+.pt_line {  position: absolute;  top: 464px; background-color:#f18b9c; height:10px; left:10px; right:10px; overflow:hidden;}
+
+.pt_line2 {  position: absolute;  top: 337px; background-color:#e5d727; height:1px; left:10px; right:10px; overflow:hidden;}
+
+.pt_bottom {  position: absolute;  top: 345px; background-color:#5bc7ab; color:#fff; padding:30px; left:10px; right:10px; overflow:hidden; height:50px; }
+
+.pt_h {display:block;   top: 345px; padding:30px; left:400px; right:10px;  position:absolute;
+font:25px 'montserrat'; letter-spacing:-1px; font-weight:700; text-transform:uppercase;
+-webkit-transition: all 0.4s;    -moz-transition: all 0.4s;    -o-transition: all 0.4s;    transition: all 0.4s; opacity:0; z-index:1000; color:#fff; width:368px;  height:50px;}
+
+[type=radio]:checked ~ label {  z-index: 2; opacity:1;}
+[type=radio]:checked ~ label ~ .pt_top  {  left:10px; opacity:1; z-index:1;}
+[type=radio]:checked ~ label ~ .pt_h {  left:10px; opacity:1; z-index:1;}
